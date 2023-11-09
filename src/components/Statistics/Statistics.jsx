@@ -1,4 +1,8 @@
-export const Statistics = ({stats}) => {
+import {
+
+} from './Statistics.style';
+
+export const Statistics = ({ stats }) => {
   return (
     <section className="statistics">
       <h2 className="title">UPLOAD STATS</h2>

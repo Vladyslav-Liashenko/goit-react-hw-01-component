@@ -1,3 +1,7 @@
+import {
+
+} from './FriendList.style';
+
 export const FriendList = ({ friends }) => {
   return (
     <section className="friends">

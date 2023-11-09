@@ -1,3 +1,7 @@
+import {
+
+} from './TransactionHistory.style';
+
 export const TransactionHistory = ({ items }) => {
   console.log(items);
   return (

@@ -1,3 +1,8 @@
+import {
+  ptext,
+  litext,
+} from './Profile.styled';
+
 export const Profile = ({ username, tag, location, avatar, stats }) => {
   const { followers, likes, views } = stats;
   return (
