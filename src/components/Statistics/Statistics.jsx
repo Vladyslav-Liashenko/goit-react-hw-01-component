@@ -1,10 +1,10 @@
 import {
-
+Section,
 } from './Statistics.style';
 
 export const Statistics = ({ stats, title }) => {
   return (
-    <section className="statistics">
+    <Section className="statistics">
       <h2 className="title">{title ? title : 'UPLOAD STATS'}</h2>
       <ul className="stat-list">
         {stats.map((el, index) => (
@@ -14,7 +14,7 @@ export const Statistics = ({ stats, title }) => {
           </li>
         ))}
       </ul>
-    </section>
+    </Section>
   );
 };
 // UPLOAD STATS

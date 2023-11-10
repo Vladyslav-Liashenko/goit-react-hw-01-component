@@ -1,9 +1,11 @@
-import {} from './FriendList.style';
+import {
+  Section,
+} from './FriendList.style';
 import { FriendListItem } from '../FriendListItem/FriendListItem';
 
 export const FriendList = ({ friends }) => {
   return (
-    <section className="friends">
+    <Section className="friends">
       <ul className="friend-list">
         {friends.map((el, index) => (
           <FriendListItem
@@ -14,6 +16,6 @@ export const FriendList = ({ friends }) => {
           />
         ))}
       </ul>
-    </section>
+    </Section>
   );
 };

@@ -1,10 +1,11 @@
 import {
+  Section,
 
 } from './TransactionHistory.style';
 
 export const TransactionHistory = ({ items }) => {
   return (
-    <section className="transaction-section">
+    <Section className="transaction-section">
         <table className="transaction-history">
           <thead className="transaction-header">
             <tr className="transaction">
@@ -23,6 +24,6 @@ export const TransactionHistory = ({ items }) => {
             ))}
           </tbody>
         </table>
-    </section>
+    </Section>
   );
 };
