@@ -3,7 +3,6 @@ import {
 } from './TransactionHistory.style';
 
 export const TransactionHistory = ({ items }) => {
-  console.log(items);
   return (
     <section className="transaction-section">
         <table className="transaction-history">

@@ -1,8 +1,9 @@
-export const ptext = styled.p`
+import styled from 'styled-components'
+export const P = styled.p`
   padding: 0px;
   margin: 0px;
 `;
 
-export const litext = styled.li`
+export const Li = styled.li`
   list-style-type: none;
 `;

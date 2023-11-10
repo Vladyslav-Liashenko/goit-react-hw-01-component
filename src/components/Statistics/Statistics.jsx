@@ -2,10 +2,10 @@ import {
 
 } from './Statistics.style';
 
-export const Statistics = ({ stats }) => {
+export const Statistics = ({ stats, title }) => {
   return (
     <section className="statistics">
-      <h2 className="title">UPLOAD STATS</h2>
+      <h2 className="title">{title ? title : 'UPLOAD STATS'}</h2>
       <ul className="stat-list">
         {stats.map((el, index) => (
           <li className="item "key={index + 1}>
@@ -17,3 +17,4 @@ export const Statistics = ({ stats }) => {
     </section>
   );
 };
+// UPLOAD STATS
