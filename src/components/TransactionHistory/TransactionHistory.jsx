@@ -1,29 +1,29 @@
 import {
-  Section,
+  Section, TH, THeader, Trans, TransFoo
 
 } from './TransactionHistory.style';
 
 export const TransactionHistory = ({ items }) => {
   return (
     <Section className="transaction-section">
-        <table className="transaction-history">
-          <thead className="transaction-header">
-            <tr className="transaction">
+        <TH className="transaction-history">
+          <THeader className="transaction-header">
+            <Trans className="transaction">
               <th>Type</th>
               <th>Amount</th>
               <th>Currency</th>
-            </tr>
-          </thead>
-          <tbody className="transaction-foot">
+            </Trans>
+          </THeader>
+          <TransFoo className="transaction-foot">
             {items.map((el, index) => (
-              <tr className="string" key={index+1} id={el.id}>
+              <Trans className="string" key={index+1} id={el.id}>
                 <td>{el.type}</td>
                 <td>{el.amount}</td>
                 <td>{el.currency}</td>
-              </tr>
+              </Trans>
             ))}
-          </tbody>
-        </table>
+          </TransFoo>
+        </TH>
     </Section>
   );
 };
