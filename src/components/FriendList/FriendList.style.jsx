@@ -26,13 +26,8 @@ export const Status = styled.span`
   box-shadow: inset -1px -1px 10px #000, 1px 1px 2px black,
     inset 0px 0px 10px black;
   display: inline-block;
+  background-color: ${(props) => (props.isOnline ? 'green' : 'brown')};
 `;
-// export const Online = styled.class`
-//   background-color: green;
-// `;
-// export const Offline = styled.class`
-//   background-color: brown;
-// `;
 
 export const Name = styled.p`
   margin: 0px;
