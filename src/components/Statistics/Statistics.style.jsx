@@ -1,4 +1,4 @@
-import styled from 'styled-components'
+import styled from 'styled-components';
 
 export const Section = styled.section`
   padding: 15px;
@@ -22,4 +22,8 @@ export const Item = styled.li`
   flex-direction: column;
   padding: 25px;
   border: solid;
+`;
+
+export const StatisticTitle = styled.h2`
+  text-align: center;
 `;
